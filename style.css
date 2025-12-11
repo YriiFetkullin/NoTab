@@ -10,10 +10,183 @@
 }
 
 body {
-    background-color: pink;
+    margin: 0;
+    background-color: #000;
+    color: #fff;
+    font-size: 18px;
     font-family: "Noto Sans", sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
+    margin: 0;
     font-family: "Montserrat", sans-serif;
+}
+
+p {
+    margin: 0;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+a:hover {
+    opacity: 0.8;
+}
+
+a:active {
+    opacity: 1;
+}
+
+.container {
+    max-width: 1240px;
+    margin: 0 auto;
+}
+
+/*********************
+* Header
+**********************/
+
+
+.header__container {
+    display: flex;
+    align-items: center;
+    gap:110px
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.header__logo {
+
+}
+
+.logo-img {
+
+}
+
+.logo-text {
+
+}
+
+.header__login {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    gap: 12px;
+}
+
+main {
+    margin-top: -50px;
+}
+
+/*********************
+* WELCOME
+**********************/
+
+
+.welcome {
+    padding-bottom: 50px;
+}
+
+.welcome__container {
+    position: relative;
+}
+
+.welcome__container::after {
+    content: "";
+    width: 650px;
+    height: 790px;
+    position: absolute;
+    right: -170px;
+    top: -240px;
+    background-image: url(./img/bg-welcome.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    transform: rotate(-105deg);
+    z-index: -1;
+}
+
+.welcome__row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 30px;
+    margin-bottom: 30px;
+}
+
+.welcome__desc {
+
+}
+
+.welcoke__title {
+    margin-bottom: 125px;
+    font-size: 64px;
+    line-height: 1.09;
+}
+
+.welcome__text {
+    position: relative;
+    padding-left: 130px;
+    width: 380px;
+    font-size: 20px;
+}
+
+.welcome__text::before {
+    content: "";
+    width: 125px;
+    height: 125px;
+    position: absolute;
+    left: 10px;
+    bottom: 15%;
+    background: rgba(96, 92, 234, 0.5);
+    filter: blur(50px);
+}
+
+.welcome__text::after {
+    position: absolute;
+    left: 0;
+    bottom: 55px;
+    content: "";
+    width: 130px;
+    height: 4px;
+    background-color: #fff;
+    transform: rotate(120deg);
+}
+
+.welcome__img {
+    width: 450px;
+}
+
+.welcome__cta {
+    margin-right: 60px;
+}
+
+.cta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cta__text {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 35px;
+}
+
+.cta__links {
+    display: flex;
+    gap: 30px;
+}
+
+.cta__link {
+
+}
+
+.cta__img {
+
 }
