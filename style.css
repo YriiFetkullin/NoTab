@@ -50,6 +50,10 @@ h2 {
     padding: 0 15px;
 }
 
+.container--small {
+    max-width: 1000px;
+}
+
 /*********************
 * Header
 **********************/
@@ -79,7 +83,7 @@ header {
 }
 
 /*********************
-* WELCOME
+* Welcome
 **********************/
 
 .welcome {
@@ -175,7 +179,7 @@ header {
 }
 
 /*********************
-* MISSION
+* Mission
 **********************/
 
 .mission {
@@ -215,4 +219,43 @@ header {
 .mission__desc {
     width: 320px;
     margin-left: auto;
+}
+
+
+/*********************
+* Common
+**********************/
+
+.common {
+    padding: 50px 0;
+    margin-top: 200px;
+}
+
+.common__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.common__col {
+    max-width: 410px;
+}
+
+.common__title {
+    margin-bottom: 20px;    
+}
+
+.common-reverse .container {
+    flex-direction: row-reverse;
+}
+
+.scanner {
+    background: linear-gradient(180deg, #000 -3%, rgba(0, 0, 0, 0) 56%, #000 84%), url("./img/bg-scanner.jpg");
+    background-size: cover;
+}
+
+.code {
+    background: linear-gradient(180deg, #000 -3%, rgba(0, 0, 0, 0) 56%, #000 84%), url("./img/bg-code.jpg");
+    background-size: cover;
+    background-position: center;
 }
