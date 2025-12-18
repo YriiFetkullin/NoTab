@@ -15,6 +15,7 @@ body {
     color: #fff;
     font-size: 18px;
     font-family: "Noto Sans", sans-serif;
+    overflow-x: hidden;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -39,15 +40,24 @@ a:active {
     opacity: 1;
 }
 
+h2 {
+    font-size: 50px;
+}
+
 .container {
     max-width: 1240px;
     margin: 0 auto;
+    padding: 0 15px;
 }
 
 /*********************
 * Header
 **********************/
 
+header {
+    position: relative;
+    z-index: 1;
+}
 
 .header__container {
     display: flex;
@@ -61,18 +71,6 @@ a:active {
     gap: 8px;
 }
 
-.header__logo {
-
-}
-
-.logo-img {
-
-}
-
-.logo-text {
-
-}
-
 .header__login {
     display: flex;
     align-items: center;
@@ -80,14 +78,9 @@ a:active {
     gap: 12px;
 }
 
-main {
-    margin-top: -50px;
-}
-
 /*********************
 * WELCOME
 **********************/
-
 
 .welcome {
     padding-bottom: 50px;
@@ -115,15 +108,10 @@ main {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-right: 30px;
-    margin-bottom: 30px;
+    height: 700px;
 }
 
-.welcome__desc {
-
-}
-
-.welcoke__title {
+.welcome__title {
     margin-bottom: 125px;
     font-size: 64px;
     line-height: 1.09;
@@ -159,7 +147,10 @@ main {
 }
 
 .welcome__img {
-    width: 450px;
+    width: 500px;
+    position: relative;
+    margin-right: -50px;
+    top: -90px;
 }
 
 .welcome__cta {
@@ -183,10 +174,45 @@ main {
     gap: 30px;
 }
 
-.cta__link {
+/*********************
+* MISSION
+**********************/
 
+.mission {
+    padding: 150px 85px;
 }
 
-.cta__img {
+.mission__container {
+    position: relative;
+}
 
+.mission__img {
+    transform: rotate(90deg) translate(-43%);
+    position: absolute;
+    top: 0;
+    right: 50%;
+    z-index: -1;
+}
+
+.mission__title {
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.mission__title::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    right: 55px;
+    top: 7px;
+    width: 85px;
+    height: 85px;
+    background-color: #F101BF;
+    opacity: 0.7;
+    filter: blur(50px);
+}
+
+.mission__desc {
+    width: 320px;
+    margin-left: auto;
 }
