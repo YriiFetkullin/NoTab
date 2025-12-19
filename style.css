@@ -3,7 +3,7 @@
 /* font-family: "Avenir", sans-serif; */
 
 @font-face {
-    font-family: "Avenir";
+    font-family: "Avenir", sans-serif;
     src: url(./fonts/Avenir-Heavy.ttf);
     font-weight: 900;
     font-style: normal;
@@ -258,4 +258,78 @@ header {
     background: linear-gradient(180deg, #000 -3%, rgba(0, 0, 0, 0) 56%, #000 84%), url("./img/bg-code.jpg");
     background-size: cover;
     background-position: center;
+}
+
+/*********************
+* Footer
+**********************/
+
+.footer {
+    padding: 100px 0px;
+    overflow: hidden;
+}
+
+.footer__container {
+    position: relative;
+}
+
+.footer__container::before {
+    content: '';
+    position: absolute;
+    left: -170px;
+    bottom: -200px;
+    width: 400px;
+    height: 400px;
+    z-index: -1;
+    background: linear-gradient(12deg, #F101BF 3%, #0066FF 97%);
+    opacity: 0.3;
+    filter: blur(125px);
+    transform: rotate(6deg);
+}
+
+.footer__cta {
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 125px;
+}
+
+.footer__cta .cta__text {
+    font-size: 24px;
+}
+
+.footer__cta .cta__img {
+    height: 81px;
+}
+
+.footer__cta .cta__links {
+    gap: 60px;
+}
+
+.footer__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Avenir", sans-serif;
+    font-weight: 900;
+}
+
+/* .footer__row > * {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+} */
+
+.footer__logo-link {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.footer__contact {
+    margin-bottom: 15px;
+}
+
+.footer__links {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
